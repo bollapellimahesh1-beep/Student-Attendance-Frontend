@@ -1,0 +1,115 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Students - Attendance Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Student Attendance Management System</h1>
+
+        <p>Manage Students</p>
+
+    </header>
+
+
+    <nav>
+
+        <a href="index.html">Dashboard</a>
+
+        <a href="students.html">Students</a>
+
+        <a href="attendance.html">Attendance</a>
+
+    </nav>
+
+
+    <main>
+
+        <h2>Student Management</h2>
+
+
+        <div class="form-container">
+
+            <input type="hidden" id="studentId">
+
+            <input type="text" id="name" placeholder="Student Name">
+
+            <input type="text" id="rollNumber" placeholder="Roll Number">
+
+            <input type="text" id="branch" placeholder="Branch">
+
+            <input type="email" id="email" placeholder="Email">
+
+
+            <button onclick="saveStudent()">
+                Save Student
+            </button>
+
+            <button onclick="clearForm()">
+                Clear
+            </button>
+
+        </div>
+
+
+        <h2>Student List</h2>
+
+
+        <table border="1">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Name</th>
+
+                    <th>Roll Number</th>
+
+                    <th>Branch</th>
+
+                    <th>Email</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="studentTableBody">
+
+            </tbody>
+
+        </table>
+
+    </main>
+
+
+    <footer>
+
+        <p>Student Attendance Management System</p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+```
