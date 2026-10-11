@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Smart Student Attendance System</h1></header>
+  <main>
+    <section class="card">
+      <h2>Backend Status</h2>
+      <p id="status" class="status wait">Checking...</p>
+    </section>
+
+    <section class="card">
+      <h2>Register Student</h2>
+      <div class="form-grid">
+        <input id="name" placeholder="Name *" maxlength="100">
+        <input id="rollNumber" placeholder="Roll number *" maxlength="30">
+        <input id="department" placeholder="Department" maxlength="100">
+        <input id="email" placeholder="Email" maxlength="100">
+        <input id="phone" placeholder="Phone" maxlength="20">
+      </div>
+      <button id="addBtn">Add Student</button>
+      <p id="formMessage" class="msg"></p>
+    </section>
+
+    <section class="card">
+      <h2>Students</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>ID</th><th>Name</th><th>Roll No</th><th>Department</th><th>Email</th><th>Phone</th><th>Action</th></tr>
+          </thead>
+          <tbody id="studentBody"></tbody>
+        </table>
+      </div>
+      <p id="listMessage" class="msg"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
