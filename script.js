@@ -3,7 +3,7 @@
 
 const el = id => document.getElementById(id);
 
-functioconstn setMsg(id, text, ok) {
+function setMsg(id, text, ok) {
   el(id).textContent = text;
   el(id).className = "msg " + (ok ? "ok" : "bad");
 }
