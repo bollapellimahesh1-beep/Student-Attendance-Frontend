@@ -1,9 +1,9 @@
 // When we deploy, only this one line changes (to the Railway backend link).
-const API = "http://localhost:8080/api";
+  API = "https://student-attendance-backend-v2-production.up.railway.app/api";
 
 const el = id => document.getElementById(id);
 
-function setMsg(id, text, ok) {
+functioconstn setMsg(id, text, ok) {
   el(id).textContent = text;
   el(id).className = "msg " + (ok ? "ok" : "bad");
 }
